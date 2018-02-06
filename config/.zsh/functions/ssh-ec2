@@ -1,0 +1,46 @@
+#!/bin/zsh
+
+EC2_COMMAND='aws ec2 describe-instances --filter "Name=instance-state-name,Values=running"'
+KEY_PATH=$HOME/Develop/Keys
+SSH_USER="ec2-user"
+
+local -A opthash
+zparseopts -D -A opthash -- -profile:
+
+if [[ -n "${opthash[(i)--profile]}" ]]; then
+  profile=${opthash[--profile]}
+
+  echo "Profile : $profile"
+  EC2_COMMAND="$EC2_COMMAND --profile $profile"
+fi
+
+echo $EC2_COMMAND
+
+INSTANCES=$(eval $EC2_COMMAND)
+
+NAMES=$(echo $INSTANCES | jq -r '.Reservations | map(.Instances) | flatten | map({dns: .PublicDnsName, name: .Tags | (.[] | select (.Key == "Name") | .Value), key: .KeyName, launchAt: .LaunchTime})  | sort_by(.name) | .[] | "\(.name)\t\(.dns)\t\(.key)\t\(.launchAt)"')
+
+TARGET=$(echo $NAMES | peco)
+
+if [ "$TARGET" = "" ]; then
+  return
+fi
+
+read NAME DNS KEY LAUNCH <<< $TARGET
+
+echo $KEY
+KEY_PATH=$(find $KEY_PATH -name "$KEY*")
+
+if [ "$KEY_PATH" = "" ]; then
+  echo "Cannot find SSH key" 1>&2
+  return
+fi
+
+echo -n "Username: [default: $SSH_USER]"
+read in_user
+if [ "$in_user" != "" ]; then
+  SSH_USER=$in_user
+fi
+
+ssh -i $KEY_PATH $SSH_USER@$DNS
+

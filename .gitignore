@@ -1,0 +1,15 @@
+
+bin/mitamae*
+
+config/.zsh/.zcompcache/
+config/.zsh/.zinc/
+config/.zsh/prezto/
+config/.zsh/z/
+config/.zsh/z_data/
+
+
+config/.zsh/.zcompdump*
+config/.zsh/.zlogin
+config/.zsh/.zlogout
+config/.zsh/.zhistory
+
