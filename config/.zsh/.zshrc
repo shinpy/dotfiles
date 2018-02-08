@@ -47,6 +47,8 @@ bindkey '^q' peco-ghq
 
 ############################################################
 
+[ -f $ZDOTDIR/.zshrc_`uname` ] && . $ZDOTDIR/.zshrc_`uname`
+
 # config
 for i in $ZDOTDIR/config/*.zsh; do
   source $i

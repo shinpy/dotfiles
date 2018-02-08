@@ -1,0 +1,6 @@
+# zsh configure for Darwin
+
+if [ -d /usr/local/opt/coreutils/libexec/gnubin ]; then
+  alias readlink='greadlink'
+fi
+
