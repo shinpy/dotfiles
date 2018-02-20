@@ -26,5 +26,9 @@ MItamae::RecipeContext.class_eval do
   end
 end
 
+node.reverse_merge!(
+  user: ENV['SUDO_USER'] || ENV['USER'],
+)
+
 include_role node[:platform]
 
