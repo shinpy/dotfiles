@@ -55,7 +55,7 @@ for i in $ZDOTDIR/config/*.zsh; do
 done
 
 # Measure
-if (which zprof > /dev/null) ;then
-  zprof | less
-fi
+# if (which zprof > /dev/null) ;then
+#   zprof | less
+# fi
 
