@@ -37,3 +37,33 @@ define :github_binary, version: nil, repository: nil, archive: nil, binary_path:
   end
 end
 
+
+define :binary, url: nil, binary_path: nil do
+  cmd = params[:name]
+  url = params[:url]
+
+  bin_path = "#{ENV['HOME']}/bin/#{cmd}"
+
+  execute "curl -fSL -o /tmp/#{cmd} #{url}" do
+    not_if "test -f #{bin_path}"
+  end
+
+  extract_cmd = nil
+  if url.end_with?('.zip')
+    extract_cmd = "unzip -o"
+  elsif url.end_with?('.tar.gz')
+    extract_cmd = "tar xvzf"
+  end
+
+  if !(extract_cmd.nil?) then
+    execute "#{extract} /tmp/#{cmd}" do
+      not_if "test -f #{bin_path}"
+      cwd "/tmp"
+    end
+  end
+
+  execute "mv /tmp/#{cmd} #{bin_path} && chmod +x #{bin_path}" do
+    not_if "test -f #{bin_path}"
+  end
+end
+
