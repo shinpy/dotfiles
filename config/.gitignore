@@ -10,3 +10,6 @@
 *.iml
 out/
 
+# VS Code
+.vscode/
+

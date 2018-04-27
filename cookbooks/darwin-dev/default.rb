@@ -1,0 +1,6 @@
+package 'coreutils'
+package 'openssl'
+package 'autoconf'
+package 'automake'
+package 'xz'
+package 'nkf'
