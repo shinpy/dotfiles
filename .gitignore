@@ -4,8 +4,7 @@ bin/mitamae*
 config/.zsh/.zcompcache/
 config/.zsh/.zinc/
 config/.zsh/prezto/
-config/.zsh/z/
-config/.zsh/z_data/
+config/.zsh/fasd
 
 
 config/.zsh/.zcompdump*

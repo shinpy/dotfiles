@@ -19,15 +19,8 @@ export HISTCONTROL=ignoreboth
 
 ############################################################
 
-# z
-_Z_DATA=$ZDOTDIR/z_data/z
-
-load-if-exists $ZDOTDIR/z/z.sh && {
-  . ${ZDOTDIR}/z/z.sh
-  function precmd_z() {
-     _z --add "$(pwd -P)"
-  }
-}
+# fasd
+_FASD_DATA=$ZDOTDIR/fasd
 
 ############################################################
 
@@ -35,10 +28,10 @@ load-if-exists $ZDOTDIR/z/z.sh && {
 FPATH=$FPATH:$ZDOTDIR/functions
 autoload -U ssh-ec2
 
-# peco z
-autoload -U peco-z-search
-zle -N peco-z-search
-bindkey '^f' peco-z-search
+# peco fasd
+autoload -U peco-fasd-search
+zle -N peco-fasd-search
+bindkey '^f' peco-fasd-search
 
 # peco ghq
 autoload -U peco-ghq

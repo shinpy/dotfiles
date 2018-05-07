@@ -20,9 +20,3 @@ zlogout
 	end
 end
 
-# z
-git "#{ENV['HOME']}/.zsh/z" do
-	repository "https://github.com/rupa/z.git"
-end
-
-
