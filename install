@@ -1,0 +1,20 @@
+#!/bin/sh
+
+repo_url="https://github.com/lulichn/dotfiles.git"
+dest="$HOME/dotfiles"
+
+if [ -d $dest ]; then
+	cd $dest
+	git fetch
+	git reset --hard origin/master
+else
+	git clone $repo_url $dest
+	cd $dest
+fi
+
+if !(type brew > /dev/null 2>&1); then
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+bin/setup install
+

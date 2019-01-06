@@ -1,0 +1,55 @@
+# utilities
+brew 'zsh'
+brew 'tmux'
+brew 'jq'        # JSON
+brew 'peco'
+brew 'graphviz'  # Graph Visualization
+
+# dev
+brew 'xz'
+brew 'nkf'
+brew 'openssl'
+brew 'autoconf'
+brew 'automake'
+brew 'coreutils'
+
+brew 'sqlite'
+brew 'redis'
+brew 'terraform'
+brew 'packer'
+brew 'ansible'
+brew 'postgresql'
+brew 'pkgdiff'
+brew 'rsync'
+
+brew 'youtube-dl'
+brew 'ffmpeg'
+brew 'flac'
+brew 'lame'
+brew 'shntool'
+brew 'cuetools'
+
+brew 'yarn', args: ['without-node']
+brew 'qemu'
+brew 'iperf'
+
+# flutter
+brew 'libimobiledevice', args: ['HEAD']
+brew 'ideviceinstaller'
+brew 'ios-deploy'
+brew 'cocoapods'
+
+# nes
+brew 'portaudio'
+
+# cask
+tap 'caskroom/cask'
+cask 'osxfuse'
+cask 'veracrypt'
+cask 'xquartz'
+cask 'qlmarkdown'
+
+# Mac App Store
+brew 'mas'
+mas 'Alfred', id: 405843582
+mas 'The Unarchiver', id: 425424353

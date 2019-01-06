@@ -11,6 +11,19 @@ define :dotfile, source: nil do
   end
 end
 
+define :defaults, action: :write, value: nil do
+  type =
+    case params[:value]
+    when String                then "-string"
+    when Integer               then "-integer"
+    when Float                 then "-float"
+    when TrueClass, FalseClass then "-boolean"
+    end
+
+  execute "defaults write #{params[:name]} #{type} #{params[:value]}" do
+  end
+end
+
 define :github_binary, version: nil, repository: nil, archive: nil, binary_path: nil do
   cmd = params[:name]
   bin_path = "#{ENV['HOME']}/bin/#{cmd}"

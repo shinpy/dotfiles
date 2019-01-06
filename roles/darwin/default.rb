@@ -1,10 +1,7 @@
 include_role 'base'
 
-include_cookbook 'darwin-dev'
-include_cookbook 'vim'
-include_cookbook 'git'
+include_cookbook 'mac-defaults'
+include_cookbook 'brew-bundle'
 include_cookbook 'zsh'
-include_cookbook 'tmux'
-include_cookbook 'peco'
-include_cookbook 'jq'
+include_cookbook 'dotfiles'
 
