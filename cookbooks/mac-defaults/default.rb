@@ -13,8 +13,26 @@ end
 
 # Trackpad
 ## Enable `Tap to click`
-defaults 'com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking' do
-  value true
+[
+  'com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking',
+  'com.apple.AppleMultitouchTrackpad Clicking'
+].each do |key|
+  defaults key do
+    value true
+  end
+end
+
+defaults '-g com.apple.mouse.tapBehavior' do
+  host :currentHost
+  value 1
+end
+
+defaults '-g com.apple.mouse.tapBehavior' do
+  value 1
+end
+
+defaults 'com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture' do
+  value 1
 end
 
 defaults '-g com.apple.trackpad.scaling' do

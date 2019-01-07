@@ -11,7 +11,14 @@ define :dotfile, source: nil do
   end
 end
 
-define :defaults, action: :write, value: nil do
+define :defaults, host: nil, action: :write, value: nil do
+  host =
+    case params[:host]
+    when :currentHost then "-currentHost"
+    when String       then "-host #{params[:host]}"
+    else ""
+    end
+
   type =
     case params[:value]
     when String                then "-string"
@@ -20,7 +27,7 @@ define :defaults, action: :write, value: nil do
     when TrueClass, FalseClass then "-boolean"
     end
 
-  execute "defaults write #{params[:name]} #{type} #{params[:value]}" do
+  execute "defaults #{host} write #{params[:name]} #{type} #{params[:value]}" do
   end
 end
 
