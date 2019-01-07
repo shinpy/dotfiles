@@ -1,0 +1,16 @@
+#!/bin/sh
+set -eu
+
+case ${1:-bundle} in
+	bundle)
+		brew update
+		brew upgrade
+		./bin/mitamae local $@ ./cookbooks/brew-bundle/default.rb
+	;;
+	clean)
+		brew doctor
+		brew prune
+		brew cleanup
+	;;
+esac
+

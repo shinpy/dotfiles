@@ -32,14 +32,22 @@ defaults 'NSGlobalDomain AppleShowAllExtensions' do
 end
 
 defaults 'com.apple.finder AppleShowAllFiles' do
-  value true
+  value false
 end
 
+defaults 'com.apple.finder ShowTabView' do
+  value true
+end
 defaults 'com.apple.finder ShowStatusBar' do
   value true
 end
 
 defaults 'com.apple.finder ShowPathbar' do
+  value true
+end
+
+## Avoid creating .DS_Store files on network volumes
+defaults 'com.apple.desktopservices DSDontWriteNetworkStores' do
   value true
 end
 

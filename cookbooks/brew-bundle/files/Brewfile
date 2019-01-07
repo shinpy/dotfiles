@@ -5,7 +5,7 @@ brew 'jq'        # JSON
 brew 'peco'
 brew 'graphviz'  # Graph Visualization
 
-# dev
+# Development tools
 brew 'xz'
 brew 'nkf'
 brew 'openssl'
@@ -33,23 +33,43 @@ brew 'yarn', args: ['without-node']
 brew 'qemu'
 brew 'iperf'
 
-# flutter
-brew 'libimobiledevice', args: ['HEAD']
-brew 'ideviceinstaller'
-brew 'ios-deploy'
-brew 'cocoapods'
+# Private
+  # flutter
+  brew 'libimobiledevice', args: ['HEAD']
+  brew 'ideviceinstaller'
+  brew 'ios-deploy'
+  brew 'cocoapods'
+  # nes
+  brew 'portaudio'
 
-# nes
-brew 'portaudio'
-
-# cask
+# Cask
 tap 'caskroom/cask'
-cask 'osxfuse'
-cask 'veracrypt'
-cask 'xquartz'
-cask 'qlmarkdown'
+  cask 'osxfuse'
+  cask 'xquartz'
+  cask 'qlmarkdown'
+  cask 'karabiner-elements'
+  cask 'veracrypt'
+  # Google
+  cask 'google-chrome'
+  cask 'google-japanese-ime'
+  cask 'google-backup-and-sync'
+  # Development
+  cask 'homebrew/cask-versions/docker-edge'
+  cask 'jetbrains-toolbox'
+  cask 'visual-studio-code'
+  cask 'sourcetree'
+  cask 'sequel-pro'
+  cask 'paw'
+  # Utilitiy
+  cask 'firefox'
+  cask 'skitch'
+  cask 'boostnote'
 
 # Mac App Store
 brew 'mas'
-mas 'Alfred', id: 405843582
-mas 'The Unarchiver', id: 425424353
+  mas 'Alfred', id: 405843582
+  # mas 'Microsoft Remote Desktop 10', id: 1295203466
+  # mas 'Slack', id: 803453959
+  mas 'TweetDeck', id: 485812721
+  mas 'The Unarchiver', id: 425424353
+  mas 'LINE', id: 539883307
