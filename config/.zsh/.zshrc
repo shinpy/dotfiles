@@ -47,7 +47,13 @@ for i in $ZDOTDIR/config/*.zsh; do
   source $i
 done
 
-# Measure
+for i in $HOME/works/.zsh/config/*.zsh; do
+  source $i
+done
+
+##
+## Profiling
+##
 # if (which zprof > /dev/null) ;then
 #   zprof | less
 # fi

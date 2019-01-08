@@ -1,5 +1,7 @@
-
-#zmodload zsh/zprof && zprof
+##
+## Profiling
+##
+# zmodload zsh/zprof && zprof
 
 
 export ZDOTDIR=$HOME/.zsh

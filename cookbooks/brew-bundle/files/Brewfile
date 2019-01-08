@@ -3,6 +3,7 @@ brew 'zsh'
 brew 'tmux'
 brew 'jq'        # JSON
 brew 'peco'
+brew 'ghq'
 brew 'graphviz'  # Graph Visualization
 
 # Development tools
@@ -13,6 +14,7 @@ brew 'autoconf'
 brew 'automake'
 brew 'coreutils'
 
+brew 'awscli'
 brew 'sqlite'
 brew 'redis'
 brew 'terraform'
@@ -52,16 +54,20 @@ tap 'caskroom/cask'
   # Google
   cask 'google-chrome'
   cask 'google-japanese-ime'
-  cask 'google-backup-and-sync'
+  cask 'google-drive-file-stream'
   # Development
+  cask 'google-cloud-sdk'
   cask 'homebrew/cask-versions/docker-edge'
   cask 'jetbrains-toolbox'
   cask 'visual-studio-code'
   cask 'sourcetree'
   cask 'sequel-pro'
   cask 'paw'
+  cask 'ngrok'
   # Utilitiy
+  cask 'skype'
   cask 'firefox'
+  cask 'vlc'
   cask 'skitch'
   cask 'boostnote'
 

@@ -14,5 +14,5 @@ fi
 path=($HOME/bin(N-/) $path)
 
 [ -f $ZDOTDIR/.zshenv_`uname` ] && . $ZDOTDIR/.zshenv_`uname`
-[ -f $ZDOTDIR/.zshenv_local ] && . $ZDOTDIR/.zshenv_local
+[ -f $HOME/works/.zsh/zshenv_local ] && . $HOME/works/.zsh/zshenv_local
 
