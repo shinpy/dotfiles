@@ -1,3 +1,5 @@
+include_recipe 'mac_defaults'
+
 # Keyboard
 defaults '-g AppleKeyboardUIMode' do
   value 3
@@ -95,5 +97,5 @@ defaults 'com.apple.screencapture disable-shadow' do
 end
 
 defaults 'com.apple.screencapture name' do
-  value "SS_"
+  value "SS"
 end

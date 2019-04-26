@@ -1,8 +1,6 @@
 [user]
 	name = Daisuke HIGASHI
 	email = me@lulichn.net
-[core]
-	excludesfile = ~/.gitignore
 [ghq]
 	root = ~/dev/src
 

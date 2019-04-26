@@ -4,6 +4,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/lulichn/dotfiles/master/in
 ```
 
 ```
-./install
+cd ~/dotfiles
 ./setup
 ```

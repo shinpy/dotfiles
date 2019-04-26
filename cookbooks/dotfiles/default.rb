@@ -3,7 +3,7 @@ directory "#{ENV['HOME']}/.config" do
 end
 
 dotfile '.gitconfig'
-dotfile '.gitignore'
+dotfile '.config/git'
 dotfile '.peco'
 dotfile '.tmux.conf'
 dotfile '.vimrc'

@@ -2,6 +2,7 @@
 brew 'zsh'
 brew 'tmux'
 brew 'jq'        # JSON
+brew 'python-yq' # Yaml
 brew 'peco'
 brew 'ghq'
 brew 'graphviz'  # Graph Visualization
@@ -14,15 +15,10 @@ brew 'autoconf'
 brew 'automake'
 brew 'coreutils'
 
-brew 'awscli'
-brew 'sqlite'
 brew 'redis'
-brew 'terraform'
-brew 'packer'
-brew 'ansible'
-brew 'postgresql'
 brew 'pkgdiff'
 brew 'rsync'
+brew 'fn'
 
 brew 'youtube-dl'
 brew 'ffmpeg'
@@ -31,7 +27,14 @@ brew 'lame'
 brew 'shntool'
 brew 'cuetools'
 
-brew 'yarn', args: ['without-node']
+# Lang
+## + Go
+  brew 'go'
+  brew 'dep'
+## + Node
+  brew 'node'
+  brew 'yarn'
+
 brew 'qemu'
 brew 'iperf'
 
@@ -44,6 +47,17 @@ brew 'iperf'
   # nes
   brew 'portaudio'
 
+# Cloud management tools
+## + AWS
+  brew 'awscli'
+## + GCP
+  brew 'firebase-cli'
+
+# Provisioning
+  brew 'terraform'
+  brew 'packer'
+  brew 'ansible'
+  
 # Cask
 tap 'caskroom/cask'
   cask 'osxfuse'
@@ -56,7 +70,6 @@ tap 'caskroom/cask'
   cask 'google-japanese-ime'
   cask 'google-drive-file-stream'
   # Development
-  cask 'google-cloud-sdk'
   cask 'homebrew/cask-versions/docker-edge'
   cask 'jetbrains-toolbox'
   cask 'visual-studio-code'
@@ -65,6 +78,7 @@ tap 'caskroom/cask'
   cask 'paw'
   cask 'ngrok'
   # Utilitiy
+  cask 'slack'
   cask 'skype'
   cask 'firefox'
   cask 'vlc'
@@ -75,7 +89,6 @@ tap 'caskroom/cask'
 brew 'mas'
   mas 'Alfred', id: 405843582
   # mas 'Microsoft Remote Desktop 10', id: 1295203466
-  # mas 'Slack', id: 803453959
   mas 'TweetDeck', id: 485812721
   mas 'The Unarchiver', id: 425424353
   mas 'LINE', id: 539883307

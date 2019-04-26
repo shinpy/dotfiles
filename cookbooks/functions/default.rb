@@ -11,26 +11,6 @@ define :dotfile, source: nil do
   end
 end
 
-define :defaults, host: nil, action: :write, value: nil do
-  host =
-    case params[:host]
-    when :currentHost then "-currentHost"
-    when String       then "-host #{params[:host]}"
-    else ""
-    end
-
-  type =
-    case params[:value]
-    when String                then "-string"
-    when Integer               then "-integer"
-    when Float                 then "-float"
-    when TrueClass, FalseClass then "-boolean"
-    end
-
-  execute "defaults #{host} write #{params[:name]} #{type} #{params[:value]}" do
-  end
-end
-
 define :github_binary, version: nil, repository: nil, archive: nil, binary_path: nil do
   cmd = params[:name]
   bin_path = "#{ENV['HOME']}/bin/#{cmd}"
