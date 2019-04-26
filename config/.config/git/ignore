@@ -1,0 +1,15 @@
+*~
+.DS_Store
+
+# sbt
+.ivy2/
+.sbt/
+
+# IDEA
+.idea/
+*.iml
+out/
+
+# VS Code
+.vscode/
+
