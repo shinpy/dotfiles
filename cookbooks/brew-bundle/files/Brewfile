@@ -1,70 +1,31 @@
+# Brewfile
 # utilities
 brew 'zsh'
 brew 'tmux'
 brew 'jq'        # JSON
 brew 'python-yq' # Yaml
-brew 'peco'
-brew 'ghq'
-brew 'graphviz'  # Graph Visualization
+brew ‘bash’
+brew ‘bash-completion’
+brew ‘rmtrash’
 
 # Development tools
-brew 'xz'
-brew 'nkf'
+brew ‘wget’
 brew 'openssl'
-brew 'autoconf'
-brew 'automake'
-brew 'coreutils'
-
-brew 'redis'
-brew 'pkgdiff'
-brew 'rsync'
-brew 'fn'
-
-brew 'youtube-dl'
-brew 'ffmpeg'
-brew 'flac'
-brew 'lame'
-brew 'shntool'
-brew 'cuetools'
-
-# Lang
-## + Go
-  brew 'go'
-  brew 'dep'
-## + Node
-  brew 'node'
-  brew 'yarn'
-
-brew 'qemu'
-brew 'iperf'
-
-# Private
-  # flutter
-  brew 'libimobiledevice', args: ['HEAD']
-  brew 'ideviceinstaller'
-  brew 'ios-deploy'
-  brew 'cocoapods'
-  # nes
-  brew 'portaudio'
+brew ‘nmap’
+brew ‘telnet’
+brew ‘tree’
+brew ‘kubectx’
 
 # Cloud management tools
 ## + AWS
   brew 'awscli'
-## + GCP
-  brew 'firebase-cli'
 
 # Provisioning
   brew 'terraform'
   brew 'packer'
   brew 'ansible'
-  
+
 # Cask
-tap 'caskroom/cask'
-  cask 'osxfuse'
-  cask 'xquartz'
-  cask 'qlmarkdown'
-  cask 'karabiner-elements'
-  cask 'veracrypt'
   # Google
   cask 'google-chrome'
   cask 'google-japanese-ime'
@@ -73,22 +34,21 @@ tap 'caskroom/cask'
   cask 'homebrew/cask-versions/docker-edge'
   cask 'jetbrains-toolbox'
   cask 'visual-studio-code'
-  cask 'sourcetree'
-  cask 'sequel-pro'
-  cask 'paw'
-  cask 'ngrok'
   # Utilitiy
   cask 'slack'
   cask 'skype'
   cask 'firefox'
+  cask ‘vivaldi’
   cask 'vlc'
   cask 'skitch'
   cask 'boostnote'
+  cask ‘cheatsheet’
 
 # Mac App Store
 brew 'mas'
-  mas 'Alfred', id: 405843582
-  # mas 'Microsoft Remote Desktop 10', id: 1295203466
   mas 'TweetDeck', id: 485812721
   mas 'The Unarchiver', id: 425424353
   mas 'LINE', id: 539883307
+  mas 'trello', id: 1278508951
+  mas 'BetterSnapTool', id: 417375580
+
