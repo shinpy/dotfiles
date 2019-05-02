@@ -4,17 +4,21 @@ brew 'zsh'
 brew 'tmux'
 brew 'jq'        # JSON
 brew 'python-yq' # Yaml
-brew ‘bash’
-brew ‘bash-completion’
-brew ‘rmtrash’
+brew 'bash'
+brew 'bash-completion'
+brew 'rmtrash'
+brew 'htop'
+brew 'nkf'
 
 # Development tools
-brew ‘wget’
+brew 'wget'
 brew 'openssl'
-brew ‘nmap’
-brew ‘telnet’
-brew ‘tree’
-brew ‘kubectx’
+brew 'nmap'
+brew 'telnet'
+brew 'tree'
+brew 'kubectx'
+brew 'editorconfig'
+brew 'tig'
 
 # Cloud management tools
 ## + AWS
@@ -31,18 +35,22 @@ brew ‘kubectx’
   cask 'google-japanese-ime'
   cask 'google-drive-file-stream'
   # Development
-  cask 'homebrew/cask-versions/docker-edge'
-  cask 'jetbrains-toolbox'
   cask 'visual-studio-code'
   # Utilitiy
   cask 'slack'
   cask 'skype'
   cask 'firefox'
-  cask ‘vivaldi’
+  cask 'vivaldi'
   cask 'vlc'
   cask 'skitch'
   cask 'boostnote'
-  cask ‘cheatsheet’
+  cask 'cheatsheet'
+  cask 'iterm2'
+  cask 'dropbox'
+  cask 'the-unarchiver'
+  cask 'karabiner-elements'
+  cask 'appcleaner'
+  cask 'paragon-ntfs'
 
 # Mac App Store
 brew 'mas'
@@ -51,4 +59,6 @@ brew 'mas'
   mas 'LINE', id: 539883307
   mas 'trello', id: 1278508951
   mas 'BetterSnapTool', id: 417375580
-
+  mas 'slack', id: 803453959
+  mas 'Parallels Client', id: 600925318
+  mas 'iMazing HEIC Converter', id: 1292198261
