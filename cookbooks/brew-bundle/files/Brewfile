@@ -51,6 +51,8 @@ brew 'tig'
   cask 'karabiner-elements'
   cask 'appcleaner'
   cask 'paragon-ntfs'
+  cask 'homebrew/cask-versions/docker-edge'
+  cask 'sourcetree'
 
 # Mac App Store
 brew 'mas'
