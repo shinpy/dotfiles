@@ -19,6 +19,7 @@ brew 'tree'
 brew 'kubectx'
 brew 'editorconfig'
 brew 'tig'
+brew 'fn'
 
 # Cloud management tools
 ## + AWS
