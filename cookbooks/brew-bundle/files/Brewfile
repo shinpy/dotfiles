@@ -9,6 +9,7 @@ brew 'bash-completion'
 brew 'rmtrash'
 brew 'htop'
 brew 'nkf'
+brew 'iperf'
 
 # Development tools
 brew 'wget'
@@ -65,3 +66,4 @@ brew 'mas'
   mas 'slack', id: 803453959
   mas 'Parallels Client', id: 600925318
   mas 'iMazing HEIC Converter', id: 1292198261
+  mas 'ZIPANG' , id: 882655968
