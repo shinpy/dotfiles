@@ -10,6 +10,7 @@ brew 'rmtrash'
 brew 'htop'
 brew 'nkf'
 brew 'iperf'
+brew 'ag'
 
 # Development tools
 brew 'wget'
