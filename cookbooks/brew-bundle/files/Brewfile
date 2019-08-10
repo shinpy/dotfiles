@@ -11,6 +11,7 @@ brew 'htop'
 brew 'nkf'
 brew 'iperf'
 brew 'ag'
+brew 'fzf'
 
 # Development tools
 brew 'wget'
