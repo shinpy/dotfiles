@@ -57,6 +57,7 @@ brew 'fn'
   cask 'paragon-ntfs'
   cask 'homebrew/cask-versions/docker-edge'
   cask 'sourcetree'
+  cask 'day-o'
 
 # Mac App Store
 brew 'mas'
