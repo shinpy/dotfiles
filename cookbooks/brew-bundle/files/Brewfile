@@ -1,38 +1,43 @@
 # Brewfile
 # utilities
-brew 'zsh'
+#brew 'zsh'
 brew 'tmux'
 brew 'jq'        # JSON
 brew 'python-yq' # Yaml
-brew 'bash'
-brew 'bash-completion'
+#brew 'bash'
+#brew 'bash-completion'
 brew 'rmtrash'
 brew 'htop'
 brew 'nkf'
 brew 'iperf'
-brew 'ag'
+#brew 'ag'
+brew 'mas'
 
 # Development tools
 brew 'wget'
-brew 'openssl'
+#brew 'openssl'
 brew 'nmap'
 brew 'telnet'
 brew 'tree'
-brew 'kubectx'
-brew 'editorconfig'
-brew 'tig'
-brew 'fn'
+#brew 'kubectx'
+#brew 'editorconfig'
+#brew 'tig'
+#brew 'fn'
+brew 'gh'
 
 # Cloud management tools
 ## + AWS
-  brew 'awscli'
+ # brew 'awscli'
 
 # Provisioning
-  brew 'terraform'
-  brew 'packer'
-  brew 'ansible'
+  #brew 'terraform'
+  #brew 'packer'
+  #brew 'ansible'
 
 # Cask
+  cask 'amazon-music'
+  cask 'anydesk'
+  cask 'atom'
   # Google
   cask 'google-chrome'
   cask 'google-japanese-ime'
@@ -46,26 +51,31 @@ brew 'fn'
   cask 'vivaldi'
   cask 'microsoft-edge'
   cask 'vlc'
-  cask 'skitch'
-  cask 'boostnote'
-  cask 'cheatsheet'
+  #cask 'skitch'
+  #cask 'boostnote'
+  cask 'box'
+  #cask 'cheatsheet'
   cask 'iterm2'
   cask 'dropbox'
   cask 'the-unarchiver'
+  cask 'teamviewer'
+  cask 'tunnelblick'
   cask 'karabiner-elements'
   cask 'appcleaner'
-  cask 'paragon-ntfs'
+  #cask 'paragon-ntfs'
   cask 'homebrew/cask-versions/docker-edge'
   cask 'sourcetree'
+  cask 'microsoft-teams'
+  cask 'microsoft-auto-update'
 
 # Mac App Store
 brew 'mas'
   mas 'TweetDeck', id: 485812721
-  mas 'The Unarchiver', id: 425424353
+  #mas 'The Unarchiver', id: 425424353
   mas 'LINE', id: 539883307
   mas 'trello', id: 1278508951
   mas 'BetterSnapTool', id: 417375580
-  mas 'slack', id: 803453959
+  #mas 'slack', id: 803453959
   mas 'Parallels Client', id: 600925318
   mas 'iMazing HEIC Converter', id: 1292198261
   mas 'ZIPANG' , id: 882655968

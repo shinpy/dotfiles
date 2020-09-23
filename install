@@ -1,6 +1,6 @@
 #!/bin/sh
 
-repo_url="https://github.com/lulichn/dotfiles.git"
+repo_url="https://github.com/shinpy/dotfiles.git"
 dest="$HOME/dotfiles"
 
 if [ -d $dest ]; then
