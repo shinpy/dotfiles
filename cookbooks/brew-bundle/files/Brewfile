@@ -1,6 +1,7 @@
 # Brewfile
 # utilities
 #brew 'zsh'
+brew 'zsh-completions'
 brew 'tmux'
 brew 'jq'        # JSON
 brew 'python-yq' # Yaml
