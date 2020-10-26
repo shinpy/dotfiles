@@ -68,6 +68,7 @@ brew 'gh'
   cask 'sourcetree'
   cask 'microsoft-teams'
   cask 'microsoft-auto-update'
+  cask 'mysqlworkbench'
 
 # Mac App Store
 brew 'mas'
