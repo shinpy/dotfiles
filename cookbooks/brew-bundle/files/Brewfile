@@ -25,6 +25,7 @@ brew 'tree'
 #brew 'tig'
 #brew 'fn'
 brew 'gh'
+brew 'expect'
 
 # Cloud management tools
 ## + AWS
